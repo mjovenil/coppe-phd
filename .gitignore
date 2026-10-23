@@ -1,0 +1,80 @@
+# ============================================================
+# coppe-phd — .gitignore
+# Exclui dados pesados, checkpoints, ambientes e arquivos gerados
+# ============================================================
+
+# ---- dados de treinamento (pesados) ---------------------------
+data/
+*.tfrecord
+*.tfrecords
+*.tar.gz
+*.zip
+*.gz
+
+# ---- checkpoints e amostras geradas --------------------------
+experiments/
+checkpoints/
+samples/
+logs/
+*.ckpt
+*.ckpt.*
+*.index
+*.data-*-of-*
+
+# ---- arquivos de áudio (gerados / datasets) ------------------
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.aiff
+
+# ---- ambientes virtuais / conda ------------------------------
+ddsp_env/
+venv/
+env/
+.env/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ---- Jupyter --------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- datasets NSynth e similares -----------------------------
+nsynth-test/
+nsynth-train/
+nsynth-valid/
+nsynth*/
+
+# ---- IDE e sistema -------------------------------------------
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---- arquivos temporários de LaTeX ---------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# ---- o que ENTRA no git (não ignorar) ------------------------
+# scripts Python (.py)
+# gin configs (.gin)
+# notebooks (.ipynb) — o conteúdo, não os checkpoints
+# README.md, .gitignore, devcontainer.json
+# caderno_pesquisa.tex e .pdf final
+ddsp/ddsp/
+ddsp/cuda-keyring_1.0-1_all.deb
