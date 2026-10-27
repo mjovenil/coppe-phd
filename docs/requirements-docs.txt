@@ -1,0 +1,4 @@
+# Dependências para gerar a documentação Sphinx
+# Instalar dentro do container: pip install -r docs/requirements-docs.txt
+sphinx>=7.0
+sphinx-rtd-theme>=2.0

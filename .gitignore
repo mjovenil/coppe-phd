@@ -78,3 +78,5 @@ Thumbs.db
 # caderno_pesquisa.tex e .pdf final
 ddsp/ddsp/
 ddsp/cuda-keyring_1.0-1_all.deb
+docs/_build/
+docs/api/generated/
