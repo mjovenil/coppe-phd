@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddsp_sonar"
+version = "0.1.0"
+description = "DDSP adapted for passive underwater acoustic synthesis"
+authors = [{name = "Marlon Jovenil de Souza"}]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0",
+    "torchaudio>=2.0",
+    "lightning==2.3.3",
+    "pyyaml",
+    "numpy",
+    "scipy",
+    "librosa",
+    "soundfile",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pylint",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
